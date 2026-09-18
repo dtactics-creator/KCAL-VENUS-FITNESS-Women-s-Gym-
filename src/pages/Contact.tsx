@@ -104,7 +104,7 @@ export default function Contact() {
             <div className="relative overflow-hidden border border-gold/30 bg-gradient-to-b from-[#141210] to-[#08080a] p-8 md:p-10">
               <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-burgundy/30 blur-[90px]" />
               <p className="flex items-center gap-3 text-[0.65rem] font-semibold tracking-[0.42em] text-gold"><Target size={15} /> ENQUIRY FORM</p>
-              <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-ivory">CLAIM YOUR SLOT<br /><span className="text-gold-metallic">{OFFER_PRICE} / YEAR</span></h2>
+              <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-ivory">CLAIM YOUR SLOT<br /><span className="text-gold-metallic">{OFFER_PRICE}</span></h2>
               <p className="mt-3 text-sm font-light tracking-wide text-ivory/55">Fill this in — we'll open WhatsApp with your enquiry ready to send. Zero spam, just a slot conversation.</p>
               <form onSubmit={submit} className="relative mt-8 space-y-5">
                 <div className="grid gap-5 sm:grid-cols-2">

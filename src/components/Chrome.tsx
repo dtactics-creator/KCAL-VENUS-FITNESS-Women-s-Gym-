@@ -388,7 +388,7 @@ export function Navbar() {
             md:px-10
           "
         >
-          <Link to="/" aria-label="FEMAURA Home">
+          <Link to="/" aria-label="KCAL VENUS FITNESS Home">
             <Logo emblemSize={42} />
           </Link>
 
@@ -1090,8 +1090,8 @@ export function Footer() {
                 text-ivory/60
               "
             >
-              A premium women-only fitness studio in Theradi Metro, Tiruvottiyur, Chennai —
-              built for strength, confidence, comfort and transformation.
+             1038, 1039, Thiruvottiyur High Rd, Thangal, Rajakadai, Tiruvottiyur, Chennai, Tamil Nadu 600019
+              
             </p>
 
             <div
@@ -1105,7 +1105,7 @@ export function Footer() {
             >
               <p className="flex items-center gap-2">
                 <MapPin size={15} className="text-gold" />
-                Theradi Metro, Tiruvottiyur, Chennai
+                Kaladipet Metro, Tiruvottiyur, Chennai
               </p>
 
               <a

@@ -17,7 +17,7 @@ export default function Logo({
     >
       {/* Logo */}
       <img
-        src="/images/logo2.png"
+        src="/images/logo22.png"
         alt="KCAL VENUS FITNESS"
         width={emblemSize}
         height={emblemSize}

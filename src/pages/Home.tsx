@@ -32,12 +32,11 @@ function Hero() {
 
       {/* vertical editorial tag */}
       <div className="absolute left-5 top-1/2 hidden -translate-y-1/2 -rotate-90 items-center gap-3 xl:flex">
-        <span className="text-[0.6rem] tracking-[0.6em] text-ivory/40">THERADI METRO — TIRUVOTTIYUR</span>
+        <span className="text-[0.6rem] tracking-[0.6em] text-ivory/40"></span>
       </div>
 
       <motion.div style={{ y: contentY, opacity: fade }} className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-36 pt-36 md:px-10 md:pb-40">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.15, ease: EASE }}>
-          <Logo emblemSize={40} />
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.35 }} className="mt-8 flex flex-wrap items-center gap-3">
@@ -77,12 +76,13 @@ function Hero() {
         className="absolute bottom-24 left-6 right-6 z-10 md:left-auto md:right-12 md:w-[340px]"
       >
         <div className="animated-gold-border float-soft bg-black/70 backdrop-blur-xl">
-          <div className="bg-gradient-to-r from-burgundy/80 to-richred/60 px-5 py-2.5 text-center text-[0.6rem] font-semibold tracking-[0.4em] text-cream">LIMITED SLOTS</div>
+          <div className="bg-gradient-to-r from-burgundy/80 to-richred/60 px-5 py-2.5 text-center text-[0.6rem] font-semibold tracking-[0.4em] text-cream">SPECIAL OFFER</div>
           <div className="px-6 py-5 text-center">
-            <p className="text-[0.6rem] tracking-[0.4em] text-ivory/55">ANNUAL MEMBERSHIP</p>
-            <p className="mt-2 font-display text-5xl font-black text-gold-metallic">{OFFER_PRICE} <span className="text-lg font-bold tracking-[0.2em]">/ YEAR</span></p>
+            <p className="text-[0.6rem] tracking-[0.4em] text-ivory/55">MEMBERSHIP DEAL</p>
+            <p className="mt-3 font-display text-2xl font-black leading-tight text-gold-metallic">PAY FOR 6 MONTHS</p>
+            <p className="mt-2 text-[0.7rem] font-semibold tracking-[0.25em] text-cream">GET 2 MONTHS FREE</p>
             <div className="gold-line mx-auto my-4 w-3/4" />
-            <p className="text-[0.68rem] font-semibold tracking-[0.35em] text-cream">ONLY 25 MEMBERS</p>
+            <p className="text-[0.68rem] font-semibold tracking-[0.35em] text-cream">NO PRICE SHOW</p>
             <a href={whatsappLink()} target="_blank" rel="noreferrer" className="btn-sheen mt-5 flex items-center justify-center gap-2 bg-gradient-to-r from-mutedgold via-gold to-goldbright px-6 py-3.5 text-[0.65rem] font-bold tracking-[0.3em] text-ink">CLAIM YOUR SLOT <ArrowRight size={14} /></a>
           </div>
         </div>
@@ -232,22 +232,20 @@ function Offer() {
   return (
     <section className="grain relative overflow-hidden py-24 md:py-36" style={{ background: "radial-gradient(90% 90% at 50% 10%, #8d1630 0%, #6e1025 34%, #1c0509 68%, #050505 100%)" }}>
       <div className="light-beam" />
-      {/* giant ghost price */}
-      <span className="pointer-events-none absolute left-1/2 top-8 -translate-x-1/2 whitespace-nowrap font-display text-[18vw] font-black leading-none text-white/[0.04]">6999</span>
       <div className="relative mx-auto max-w-5xl px-6 text-center">
         <Reveal>
-          <p className="inline-flex items-center gap-3 border border-goldbright/60 bg-black/40 px-6 py-2.5 text-[0.62rem] font-semibold tracking-[0.42em] text-goldbright backdrop-blur-md"><CalendarCheck size={14} /> FOUNDING-YEAR CAMPAIGN</p>
+          <p className="inline-flex items-center gap-3 border border-goldbright/60 bg-black/40 px-6 py-2.5 text-[0.62rem] font-semibold tracking-[0.42em] text-goldbright backdrop-blur-md"><CalendarCheck size={14} /> SPECIAL OFFER</p>
         </Reveal>
         <h2 className="mt-8 font-display font-black leading-none">
-          <span className="block text-[clamp(4rem,14vw,10rem)] text-gold-metallic drop-shadow-[0_10px_50px_rgba(212,175,55,0.35)]">{OFFER_PRICE}</span>
-          <span className="mt-2 block text-[clamp(1.1rem,3vw,1.8rem)] font-bold tracking-[0.55em] text-cream">PER YEAR</span>
+          <span className="mt-2 block text-[clamp(1.2rem,3vw,2.2rem)] font-bold tracking-[0.35em] text-cream">PAY FOR 6 MONTHS</span>
+          <span className="mt-4 block text-[clamp(2.2rem,7vw,5.2rem)] text-gold-metallic drop-shadow-[0_10px_50px_rgba(212,175,55,0.35)]">GET 2 MONTHS FREE</span>
         </h2>
         <Reveal delay={0.1}>
           <div className="mx-auto mt-8 flex max-w-xl items-center gap-4">
             <span className="gold-line flex-1" /><Star size={16} className="fill-gold text-gold" /><span className="gold-line flex-1" />
           </div>
-          <p className="mt-6 text-[0.8rem] font-semibold tracking-[0.4em] text-cream">LIMITED SLOTS — 25 MEMBERS</p>
-          <p className="mx-auto mt-4 max-w-xl text-sm font-light leading-relaxed tracking-wide text-cream/70">One payment. Twelve months of coached women-only training. When the 25 slots fill, the doors close — this price will not return.</p>
+          <p className="mt-6 text-[0.8rem] font-semibold tracking-[0.4em] text-cream">NO PRICE SHOW</p>
+          <p className="mx-auto mt-4 max-w-xl text-sm font-light leading-relaxed tracking-wide text-cream/70">This membership deal is available for women who want a strong, focused, supportive gym experience with a flexible long-term plan.</p>
         </Reveal>
         <Reveal delay={0.2}>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
